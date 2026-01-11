@@ -44,5 +44,5 @@ Intel RealSense D435i 카메라와 YOLOv8을 이용하여 주황색 탁구공을
 2.  **메인 컨트롤러 실행**
     ```bash
     # 노트북에서 실행
-    ros2 launch yolo_project_package object_follower.launch.py
+    ros2 launch yolo_project_package object_follow.launch.py
     ```
