@@ -11,7 +11,7 @@ Intel RealSense D435i 카메라와 YOLOv8을 이용하여 주황색 탁구공을
 * **Hardware:**
     * Intel RealSense D435i
     * TurtleBot3 Burger (Raspberry Pi 4 2GB)
-    * Laptop
+    * Laptop (RTX4060)
 
 ---
 ## ✨ 주요 기능 (Features & Logic)
