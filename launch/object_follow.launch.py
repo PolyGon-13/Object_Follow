@@ -6,7 +6,7 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    yolo_project_package_dir=get_package_share_directory('yolo_project_package')
+    object_follow_dir=get_package_share_directory('object_follow')
 
     cam_x,cam_y,cam_z='0.04','0.0','0.15'
     cam_yaw,cam_pitch,cam_roll='0.0','0.0','0.0'
@@ -36,14 +36,14 @@ def generate_launch_description():
         ),
 
         Node(
-            package='yolo_project_package',
+            package='object_follow',
             executable='yolo_node',
             name='yolo_node'
         ),
 
         Node(
-            package='yolo_project_package',
-            executable='vel_pub_node',
-            name='vel_pub_node'
+            package='object_follow',
+            executable='find_position_and_move',
+            name='find_position_and_move_node'
         )
     ])

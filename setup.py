@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import find_packages, setup
 
-package_name = 'yolo_project_package'
+package_name = 'object_follow'
 
 setup(
     name=package_name,
@@ -25,8 +25,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'yolo_node=yolo_project_package.yolo_node:main',
-            'vel_pub_node=yolo_project_package.vel_pub_node:main',
+            'yolo_node=object_follow.yolo_node:main',
+            #'vel_pub_node=object_follow.vel_pub_node:main',
+            #'find_position_node=object_follow.Find_Position:main',
+            'find_position_and_move=object_follow.find_position_and_move:main',
         ],
     },
 )
