@@ -5,3 +5,7 @@ log/
 
 # 모델 파일
 weights/
+
+# Python cache
+src/object_follow/__pycache__/
+
