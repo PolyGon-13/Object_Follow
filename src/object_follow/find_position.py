@@ -26,17 +26,11 @@ class FindPositionNode(Node):
         if not msg.detections:
             return
 
-        # Assuming the first detection is the target
         detection = msg.detections[0]
         bbox = detection.bbox
         
-        # Center x, y are normalized coordinates (0.0 to 1.0)
         x = bbox.center.position.x
         y = bbox.center.position.y
-
-        # Determine quadrant
-        # (0,0) is usually Top-Left in image coordinates
-        # x increases to right, y increases to bottom
         
         quadrant = 0
         
@@ -69,3 +63,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
